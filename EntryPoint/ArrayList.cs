@@ -167,7 +167,7 @@ namespace MyArrayList
             ReduceCapacity();
             T[] temp = new T[_capacity];
             for (int i = 0; i < Length; i++)
-                temp[i] = _array[i + n - 1];
+                temp[i] = _array[i + n];
             _array = temp;
         }
         //RemoveLastMultiple(int n) - удаление последних n элементов
